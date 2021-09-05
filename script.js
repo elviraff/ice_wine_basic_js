@@ -97,9 +97,9 @@ for (let i = 2; i <= 100; i++ ) {
 
 //Part-2
 var arr = [['apple', 10, 50], ['banana', 20, 100], ['qiwi', 30, 200], ['coconut', 10, 300]];
-var cost = 0;
-var sum = 0;
 function CountBusketPrice(busket){
+    var cost = 0;
+    var sum = 0;
     for (let i = 0; i < busket.length; i++ ) {
         cost = busket[i][1] * busket[i][2];
         sum = sum + cost;
