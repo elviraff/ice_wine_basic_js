@@ -97,12 +97,12 @@ for (let i = 2; i <= 100; i++ ) {
 
 //Part-2
 var arr = [['apple', 10, 50], ['banana', 20, 100], ['qiwi', 30, 200], ['coconut', 10, 300]];
-var marr = [];
+var cost = 0;
 var sum = 0;
 function CountBusketPrice(busket){
     for (let i = 0; i < busket.length; i++ ) {
-        marr[i] = busket[i][1] * busket[i][2];
-        sum = sum + marr[i];
+        cost = busket[i][1] * busket[i][2];
+        sum = sum + cost;
     }
     console.log(sum);
 }
