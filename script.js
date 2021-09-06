@@ -86,33 +86,77 @@
 
 
 //lesson-3
-//Part-1
-FirstCycle:
-for (let i = 2; i <= 100; i++ ) {
-    for (let j = 2; j < i; j++){
-        if (i % j == 0) continue FirstCycle;
+// //Part-1
+// FirstCycle:
+// for (let i = 2; i <= 100; i++ ) {
+//     for (let j = 2; j < i; j++){
+//         if (i % j == 0) continue FirstCycle;
+//     }
+//     console.log (i);
+// }
+//
+// //Part-2
+// var arr = [['apple', 10, 50], ['banana', 20, 100], ['qiwi', 30, 200], ['coconut', 10, 300]];
+// function CountBusketPrice(busket){
+//     var cost = 0;
+//     var sum = 0;
+//     for (let i = 0; i < busket.length; i++ ) {
+//         cost = busket[i][1] * busket[i][2];
+//         sum = sum + cost;
+//     }
+//     console.log(sum);
+// }
+// CountBusketPrice(arr);
+//
+// //Part-3
+// for (let i = 0; i < 10; console.log(i), i++){}
+//
+// //Part-4
+// let a = 1;
+// for (let i = 1; i < 20; i++){
+//     console.log('x'.repeat(i));
+// }
+
+//lesson-4
+
+//Part 1
+// var numberObj = {};
+// function numberParts(){
+//     var number = parseInt(prompt('Введите любое число от 0 до 999'));
+//     if (number > 999) {
+//         console.log ('Число больше 999, введите число от 0 до 999');
+//         numberObj = null;
+//     }
+//     if (number >= 0 && number < 999){
+//         numberObj.units = number % 10;
+//         numberObj.tens = Math.floor((number / 10) % 10);
+//         numberObj.hundreds = Math.floor(number / 100);
+//     }
+//     console.log(numberObj);
+// }
+// numberParts();
+
+//Part 2
+
+// var arr = [['apple', 10, 50], ['banana', 20, 100], ['qiwi', 30, 200], ['coconut', 10, 300]];
+var product1 = {
+    name: "apple",
+    itemCost: 50,
+    quantity: 10,
+    totalCost: function() {
+        this.itemCost * this.quantity;
     }
-    console.log (i);
 }
 
-//Part-2
-var arr = [['apple', 10, 50], ['banana', 20, 100], ['qiwi', 30, 200], ['coconut', 10, 300]];
-function CountBusketPrice(busket){
-    var cost = 0;
-    var sum = 0;
-    for (let i = 0; i < busket.length; i++ ) {
-        cost = busket[i][1] * busket[i][2];
-        sum = sum + cost;
-    }
-    console.log(sum);
-}
-CountBusketPrice(arr);
-
-//Part-3
-for (let i = 0; i < 10; console.log(i), i++){}
-
-//Part-4
-let a = 1;
-for (let i = 1; i < 20; i++){
-    console.log('x'.repeat(i));
-}
+product1.totalCost();
+console.log(product1.totalCost())
+// function CountBusketPrice(busket){
+//     var cost = 0;
+//     var sum = 0;
+//     for (let i = 0; i < busket.length; i++ ) {
+//         cost = busket[i][1] * busket[i][2];
+//         sum = sum + cost;
+//     }
+//     console.log(sum);
+// }
+// CountBusketPrice(arr);
