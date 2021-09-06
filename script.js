@@ -120,21 +120,21 @@
 //lesson-4
 
 //Part 1
-// var numberObj = {};
-// function numberParts(){
-//     var number = parseInt(prompt('Введите любое число от 0 до 999'));
-//     if (number > 999) {
-//         console.log ('Число больше 999, введите число от 0 до 999');
-//         numberObj = null;
-//     }
-//     if (number >= 0 && number < 999){
-//         numberObj.units = number % 10;
-//         numberObj.tens = Math.floor((number / 10) % 10);
-//         numberObj.hundreds = Math.floor(number / 100);
-//     }
-//     console.log(numberObj);
-// }
-// numberParts();
+var numberObj = {};
+function numberParts(){
+    var number = parseInt(prompt('Введите любое число от 0 до 999'));
+    if (number > 999) {
+        console.log ('Число больше 999, введите число от 0 до 999');
+        numberObj = null;
+    }
+    if (number >= 0 && number < 999){
+        numberObj.units = number % 10;
+        numberObj.tens = Math.floor((number / 10) % 10);
+        numberObj.hundreds = Math.floor(number / 100);
+    }
+    console.log(numberObj);
+}
+numberParts();
 
 //Part 2
 
