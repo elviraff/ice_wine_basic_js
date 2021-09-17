@@ -118,10 +118,10 @@
 // }
 
 //lesson-4
-
 //Part 1
 var numberObj = {};
-function numberParts(){
+function numbe
+rParts(){
     var number = parseInt(prompt('Введите любое число от 0 до 999'));
     if (number > 999) {
         console.log ('Число больше 999, введите число от 0 до 999');
@@ -137,26 +137,27 @@ function numberParts(){
 numberParts();
 
 //Part 2
-
-// var arr = [['apple', 10, 50], ['banana', 20, 100], ['qiwi', 30, 200], ['coconut', 10, 300]];
-var product1 = {
+let product1 = {
     name: "apple",
     itemCost: 50,
     quantity: 10,
-    totalCost: function() {
-        this.itemCost * this.quantity;
-    }
 }
-
-product1.totalCost();
-console.log(product1.totalCost())
-// function CountBusketPrice(busket){
-//     var cost = 0;
-//     var sum = 0;
-//     for (let i = 0; i < busket.length; i++ ) {
-//         cost = busket[i][1] * busket[i][2];
-//         sum = sum + cost;
-//     }
-//     console.log(sum);
-// }
-// CountBusketPrice(arr);
+var product2 = {
+    name: "banana",
+    itemCost: 100,
+    quantity: 20,
+}
+var product3 = {
+    name: "coconut",
+    itemCost: 300,
+    quantity: 10,
+}
+let arr = [product1, product2, product3]
+function CountBusketPrice(busket){
+    var sum = 0;
+    for (let i = 0; i < busket.length; i++ ) {
+        sum += busket[i].itemCost * busket[i].quantity;
+    }
+    console.log(sum);
+}
+CountBusketPrice(arr);
